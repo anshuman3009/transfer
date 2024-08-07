@@ -1,0 +1,218 @@
+:root{
+    --first-color:#3369ff;
+    --second-color:#f4f7ff;
+    --third-color:#0d0d0d;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Ubuntu", sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+.navbar{
+    position: fixed;
+    width: 100%;
+    background-color: var(--third-color);
+    color: var(--second-color) !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    z-index: 100;
+}
+.navbar-links{
+    display: flex;
+    column-gap: 20px;
+}
+.navbar-links .navbar-link{
+    /* color: var(--second-color); */
+    padding-top: 15px;
+}
+.navbar-links a{
+    color: var(--second-color);
+    text-decoration: none;
+}
+.navbar-links a:hover{
+    transition: 5s ease-in-out;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.navbar-menu-toggle{
+    display: none;
+}
+
+/* Side navbar */
+.sidenavbar{
+    background-color: var(--third-color);
+    padding:20px;
+    width:50%;
+    height:100%;
+    position: fixed;
+    top: 0;
+    right: -60%;
+    color:white;
+    transition:1s ease-in-out;
+    z-index: 1000;
+}
+.sidenavbar-link{
+    margin-bottom: 30px;
+}
+.sidenavbar-links a{
+    text-decoration: none;
+    color:white;
+}
+.sidenavbar-links a:hover{
+    text-decoration: underline;
+}
+
+
+/* Home page */
+#home-page{
+    background-color: #e3e3e5;
+    padding: 100px 0 20px 0;
+}
+.home-right-box{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+/* video {
+    position: relative;
+    top: 0;
+    left: 0;
+    min-width: 70%;
+    min-height: 70%;
+    z-index: -1;
+  }
+ */
+
+
+ /* Booking page */
+ .bookingPage{
+    flex-direction: column;
+   
+}
+
+.search-box{
+    box-shadow: -3px 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+.search-box, #form{
+    width: 100%;
+}
+
+.form-floating{
+    width: 100%;
+}
+
+#submit-btn, #label-from, #label-to{
+    background-color: var(--first-color);
+    color: var(--second-color);
+}
+
+.car-details{
+    background-color: #f2f2f2;
+    box-shadow: -3px 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+.car-details-left, .car-details-right{
+    flex-direction: column;
+}
+
+.submit-btn-modal{
+    width: 100%;
+}
+
+
+
+
+/* Feature */
+#feature{
+    background-color: var(--third-color);
+    color: #e3e3e5;
+}
+
+/* Customer Feedback */
+.client {
+    width: 100%;
+    height: 100%;
+    background: #f4f7ff; 
+    color: #0d0d0d ;;
+}
+
+.carousel-icon i {
+  font-size: 5rem;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.carousel-item i {
+  font-size: 1.6rem;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.t-card {
+  padding: 1.8125rem 1.125rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 1.25rem;
+  color:black;
+  height: auto;
+}
+
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 1.5625rem solid transparent;
+  border-right: 1.5625rem solid transparent;
+  border-top: 1.25rem solid rgba(0, 0, 0, 0.5);
+}
+
+#feedback-title{
+  color: var(--third-color);
+}
+
+
+
+/* Footer */
+#footer-page{
+    background-color: #0d0d0d;
+    color: #f4f7ff;
+   }
+   #footer-page p,ul,i{
+        color: gray;
+   }
+   #footer-page ul li{
+       list-style-type: none;
+   }
+   #footer-page a{
+        text-decoration: none;
+        color: gray;
+   }
+
+   #footer-page a:hover {
+        color: #3369ff;
+    }
+   .footer-icons i {
+        padding: 10px;
+        transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+    }
+
+    .footer-icons i:hover {
+        transform: translateY(-5px);
+        color: #3369ff; 
+    }
+
+
+
+/* Responsive */
+@media screen and (max-width:700px){
+    .navbar-menu-toggle{
+        display: block;
+    }
+    .navbar-links{
+        display: none;
+    }
+}
